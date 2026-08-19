@@ -1,4 +1,4 @@
-Kobo Tailscale Manager v4.2
+Kobo Tailscale Manager v1.00
 
 Fonctions
 - Détection automatique des Kobo USB sous Windows
@@ -29,7 +29,7 @@ Sécurité / limites
 Compilation Windows
 1. Installer Python 3.12 avec Tcl/Tk.
 2. Clic droit sur build_exe.ps1 > Exécuter avec PowerShell (ou depuis un terminal PowerShell).
-3. L'EXE final apparaît dans dist\KoboTailscaleManager.exe.
+3. L'EXE final apparaît dans dist\KoboTailscaleManager-v1.00.exe.
 
 Features
 
@@ -63,7 +63,7 @@ Windows Build
 
 1. Install Python 3.12 with Tcl/Tk.
 2. Right-click `build_exe.ps1` and select **Run with PowerShell** (or run it from a PowerShell terminal).
-3. The final executable will be created at: dist\KoboTailscaleManager.exe
+3. The final executable will be created at: dist\KoboTailscaleManager-v1.00.exe
 
 Licence
 - Le code propre à Kobo Tailscale Manager est distribué sous licence MIT (voir LICENSE).

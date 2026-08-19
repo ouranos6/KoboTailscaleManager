@@ -5,7 +5,7 @@ import tkinter as tk
 from tkinter import ttk, messagebox
 
 APP_NAME = 'Kobo Tailscale Manager'
-APP_VERSION = '4.2'
+APP_VERSION = '1.00'
 TS_VERSION = '1.98.10'
 NM_VERSION = '0.6.0'
 CLARA_COLOUR_MODEL_ID = '00000000-0000-0000-0000-000000000390'
@@ -72,7 +72,7 @@ while [ ! -d /mnt/onboard/.kobo ] && [ "$i" -lt 120 ]; do sleep 1; i=$((i+1)); d
 [ -d /mnt/onboard/.kobo ] || exit 1
 mkdir -p "$BASE" "$SCRIPTS" "$STATE" "$NM_DIR" "$MANAGER"
 
-echo "Kobo Tailscale Manager installer v4" > "$STATUS"
+echo "Kobo Tailscale Manager installer v1.00" > "$STATUS"
 log "Bootstrap started"
 ARCH="$(uname -m 2>/dev/null)"; KERNEL="$(uname -r 2>/dev/null)"
 log "Architecture: $ARCH"; log "Kernel: $KERNEL"

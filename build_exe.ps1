@@ -22,10 +22,10 @@ $assetArgs = @()
 if (Test-Path (Join-Path $PSScriptRoot 'assets')) {
   $assetArgs = @('--add-data', 'assets;assets')
 }
-& $venvPyInstaller --noconfirm --clean --onefile --windowed --name KoboTailscaleManager @assetArgs KoboTailscaleManager.pyw
+& $venvPyInstaller --noconfirm --clean --onefile --windowed --name KoboTailscaleManager-v1.00 @assetArgs KoboTailscaleManager.pyw
 if ($LASTEXITCODE -ne 0) {
   throw "PyInstaller a echoue avec le code $LASTEXITCODE."
 }
 Write-Host ''
 Write-Host 'EXE cree :' -ForegroundColor Green
-Write-Host (Join-Path $PSScriptRoot 'dist\KoboTailscaleManager.exe')
+Write-Host (Join-Path $PSScriptRoot 'dist\KoboTailscaleManager-v1.00.exe')
