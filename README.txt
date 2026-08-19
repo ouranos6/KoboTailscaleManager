@@ -31,8 +31,6 @@ Compilation Windows
 2. Clic droit sur build_exe.ps1 > Exécuter avec PowerShell (ou depuis un terminal PowerShell).
 3. L'EXE final apparaît dans dist\KoboTailscaleManager.exe.
 
-
-
 Features
 
 - Automatic detection of USB-connected Kobo eReaders on Windows
@@ -64,5 +62,13 @@ Security / Limitations
 Windows Build
 
 1. Install Python 3.12 with Tcl/Tk.
-2. Right-click `build_exe.ps1` and select **Run with PowerShell*- (or run it from a PowerShell terminal).
+2. Right-click `build_exe.ps1` and select **Run with PowerShell** (or run it from a PowerShell terminal).
 3. The final executable will be created at: dist\KoboTailscaleManager.exe
+
+Licence
+- Le code propre à Kobo Tailscale Manager est distribué sous licence MIT (voir LICENSE).
+- NickelMenu et Tailscale conservent leurs licences respectives (voir THIRD_PARTY_NOTICES.md).
+
+License
+- Kobo Tailscale Manager's own code is distributed under the MIT License (see LICENSE).
+- NickelMenu and Tailscale retain their respective licenses (see THIRD_PARTY_NOTICES.md).
