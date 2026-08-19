@@ -30,3 +30,39 @@ Compilation Windows
 1. Installer Python 3.12 avec Tcl/Tk.
 2. Clic droit sur build_exe.ps1 > Exécuter avec PowerShell (ou depuis un terminal PowerShell).
 3. L'EXE final apparaît dans dist\KoboTailscaleManager.exe.
+
+
+
+Features
+
+- Automatic detection of USB-connected Kobo eReaders on Windows
+- eReader selector
+- Reads firmware version, kernel, serial number, Model ID, and API endpoint
+- Detects Tailscale status and NickelMenu files accessible over USB
+- Editable API endpoint with automatic backup of `Kobo eReader.conf`
+- Optional Tailscale auth key, visible and kept in memory only until the application is closed
+- "GO" = fresh installation OR update
+- "Restore Kobo Config" = restores the endpoint and removes the integration on reboot
+- "Full Uninstall" = completely removes the integration and Tailscale state
+- Installs NickelMenu if not already installed
+- Installs Tailscale ARM 1.98.10 if not already installed
+- NickelMenu and Tailscale packages are bundled for offline installation on the Kobo
+- Automatic authentication using the auth key, if provided
+- NickelMenu entries: `Tailscale - 10 min` / `Status` / `Start` / `Stop` / `Login`
+- Selectable NickelMenu entries
+- Optional automatic USB ejection
+- No permanent autostart by default
+
+Security / Limitations
+
+- Model detection using eLabel, serial number, version file, and Kobo configuration
+- Recognized models running compatible firmware are not limited to the Clara Colour
+- Firmware 5.x is blocked
+- The Tailscale auth key is temporarily written to the Kobo and deleted after successful authentication
+- A `Kobo eReader.conf.kts-backup` backup is created before any modification
+
+Windows Build
+
+1. Install Python 3.12 with Tcl/Tk.
+2. Right-click `build_exe.ps1` and select **Run with PowerShell*- (or run it from a PowerShell terminal).
+3. The final executable will be created at: dist\KoboTailscaleManager.exe
